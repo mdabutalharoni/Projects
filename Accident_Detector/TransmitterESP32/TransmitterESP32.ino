@@ -10,8 +10,8 @@ char auth[] = "-Ev2Q-ZV4CXqrbpgKcJrjfsq2WZJFq_D";
 
 
 // Wi-Fi credentials
-const char* ssid = "Galaxy A14 5G 7F0F";
-const char* password = "@2008012";
+const char* ssid = "TP-Link_9A5A";
+const char* password = "45571107";
 
 // Server URL (receiver ESP32 IP)
 const char* serverUrl = "http://192.168.37.130/data";  // Replace with your receiver's IP

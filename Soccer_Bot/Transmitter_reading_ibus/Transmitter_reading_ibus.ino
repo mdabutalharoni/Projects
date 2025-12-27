@@ -1,5 +1,4 @@
 #include <IBusBM.h>
-
 IBusBM ibus;
 
 int readChannel(byte channelInput, int minLimit, int maxLimit, int defaultv) {
@@ -14,8 +13,10 @@ bool readSwitch(byte channelInput, bool defaultv) {
   int ch = readChannel(channelInput, 0, 100, intDefaultv);
   return (ch > 50);
 }
+
 int ch1, ch2, ch3, ch4, ch5, ch6;
 bool f = true;
+
 void setup() {
   Serial.begin(115200);
   ibus.begin(Serial);
@@ -25,7 +26,7 @@ void setup() {
 
 void loop() {
   ch1 = readChannel(0, -250, 250, 0);    //ch - 1
-  ch2 = readChannel(1, 250, -250, 0);  //ch - 2
+  ch2 = readChannel(1, -250, 250, 0);  //ch - 2
   ch3 = readChannel(2, 0, 250, 0);     //ch - 3
   ch4 = readChannel(3, -250, 250, 0);  //ch - 4
   ch5 = readSwitch(4, false);     //ch - 5
