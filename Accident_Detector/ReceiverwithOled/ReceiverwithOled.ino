@@ -10,8 +10,8 @@ const char* password = "Talhaspot";
 const int relayPin = 33;
 
 // Telegram bot information
-const char* telegramBotToken = "7544634417:AAEK-gPZOx-8TcmM0zDkLQ5R5GBcsYEuL4k"; // Replace with your Telegram Bot Token
-const char* chatID = "2005149959"; // Replace with your Telegram Chat ID
+const char* telegramBotToken = ""; // Replace with your Telegram Bot Token
+const char* chatID = ""; // Replace with your Telegram Chat ID
 
 // Server URL for sending messages to Telegram
 String telegramApiUrl = "https://api.telegram.org/bot" + String(telegramBotToken) + "/sendMessage";

@@ -3,9 +3,9 @@
 #include <BlynkSimpleEsp32.h>
 
 // Blynk Auth Token
-char auth[] = "-Ev2Q-ZV4CXqrbpgKcJrjfsq2WZJFq_D";
-#define BLYNK_TEMPLATE_ID "TMPL6Sf0AwQcq"
-#define BLYNK_TEMPLATE_NAME "AccidentDetector"
+char auth[] = "";
+#define BLYNK_TEMPLATE_ID ""
+#define BLYNK_TEMPLATE_NAME ""
 
 
 
@@ -14,7 +14,7 @@ const char* ssid = "TP-Link_9A5A";
 const char* password = "45571107";
 
 // Server URL (receiver ESP32 IP)
-const char* serverUrl = "http://192.168.37.130/data";  // Replace with your receiver's IP
+const char* serverUrl = "";  // Replace with your receiver's IP
 
 // Pin assignment
 const int alcoholPin = 33;       // Alcohol sensor connected to GPIO 33
